@@ -2,7 +2,7 @@ FROM openshift/jenkins-slave-base-centos7
 
 MAINTAINER Gabe Montero <gmontero@redhat.com>
 
-ENV NODEJS_VERSION=8 \
+ENV NODEJS_VERSION=10 \
     NPM_CONFIG_PREFIX=$HOME/.npm-global \
     PATH=$HOME/node_modules/.bin/:$HOME/.npm-global/bin/:$PATH \
     BASH_ENV=/usr/local/bin/scl_enable \
